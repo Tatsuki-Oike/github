@@ -365,3 +365,56 @@ git commit -m "README.mdを編集" # コミット
 git remote add origin https://github.com/Tatsuki-Oike/github.git # リモート設定
 git push -u origin master # push
 ```
+
+
+
+# 7 GitHubでチーム開発
+***
+
+## 7.1 ssh key作成
+* ssh key作成 (terminal)
+```sh
+ssh-keygen -t rsa # ssh key作成
+pbcopy < <ssh key path>/id_rsa.pub # ssh key コピー
+```
+
+
+* ssh key作成 (GitHub)
+
+
+* ssh key確認
+```sh
+ssh -T git@github.com # 確認
+```
+
+
+## 7.2 clone (user)
+```sh
+cd ./Documents/youtube/Git_user # gitのディレクトリに移動
+git clone git@github.com:Sample-User1/github.git # pull
+cd ./github
+```
+
+## 7.3 htmlに文章追加 (user)
+
+* 作業ブランチ作成
+```sh
+git checkout -b html_branch # ブランチ作成
+```
+
+
+* htmlに文章追加
+
+
+* commit
+```sh
+git add . # 指定したファイルをステージ
+git commit -m "htmlに文章追加" # コミット
+```
+
+## 7.4 push (user)
+
+```sh
+git remote add origin git@github.com:Sample-User1/github.git # リモート設定
+git push origin html_branch # push
+```
