@@ -346,7 +346,7 @@ git push origin master # push
 
 ## 6.1 pull
 ```sh
-cd ./Documents/youtube/Git # gitのディレクトリに移動
+cd ./Documents/youtube/GitHub # gitのディレクトリに移動
 git pull origin master # pull
 ```
 
@@ -362,8 +362,6 @@ git commit -m "README.mdを編集" # コミット
 
 ## 6.3 push
 ```sh
-git remote add origin https://github.com/Tatsuki-Oike/git.git # リモート設定
+git remote add origin https://github.com/Tatsuki-Oike/github.git # リモート設定
 git push -u origin master # push
-# Username : Tatsuki-Oike
-# Password : token
 ```
